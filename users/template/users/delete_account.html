@@ -1,0 +1,6 @@
+<h1>Delete Account</h1>
+<p>Are you sure you want to delete your account? This action cannot be undone.</p>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Delete My Account</button>
+</form>

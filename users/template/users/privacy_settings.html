@@ -1,0 +1,9 @@
+<h1>Privacy Settings</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label>
+        <input type="checkbox" name="is_profile_public" {% if request.user.is_profile_public %}checked{% endif %}>
+        Make my profile public
+    </label>
+    <button type="submit">Save Changes</button>
+</form>
